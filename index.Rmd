@@ -14,7 +14,7 @@ output:
   </p>
   <p class="subtag">Built by Abdulrahman Alshehri</p>
   <div class="hero-cta">
-    <a class="btn" href="#tools">Explore Tools</a>
+    <a class="btn" href="www.google.com">Explore Tools</a>
     <a class="btn ghost" href="about.html">About</a>
   </div>
 </div>
