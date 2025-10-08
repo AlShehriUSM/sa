@@ -1,5 +1,5 @@
 ---
-title: "Welcome"
+title: "Abdulrahman Alshehri"
 output:
   html_document:
     toc: false
@@ -17,8 +17,9 @@ output:
   </div>
 </div>
 
-<!-- Optional hero image (replace with your own file in assets/) -->
-<!-- <img class="hero-img" src="assets/hero.jpg" alt="Oral health AI tools"> -->
+
+
+
 
 ## Featured
 A growing collection of small, focused apps—from risk calculators to data viewers—designed to be easy to use and easy to trust.
@@ -31,39 +32,15 @@ A growing collection of small, focused apps—from risk calculators to data view
   <!-- TOOL CARD 1 -->
   <a class="card" href="https://your-link-here.example" target="_blank" rel="noopener">
     <div class="thumb">
-      <img src="assets/tool-risk.png" alt="Periodontal Risk – thumbnail">
+      <img src="tooth_resto.png" alt="Tooth Restorability – thumbnail">
     </div>
     <div class="card-body">
-      <h3>Periodontal Risk (Demo)</h3>
-      <p>Predict low/medium/high risk from simple questionnaire inputs. Fast triage for clinics.</p>
+      <h3>restorabilityApp</h3>
+      <p>To check tooth restorability utilizing Avila et al. (2009) criteria</p>
       <span class="pill">Beta</span>
     </div>
   </a>
 
-  <!-- TOOL CARD 2 -->
-  <a class="card" href="https://your-second-tool.example" target="_blank" rel="noopener">
-    <div class="thumb">
-      <img src="assets/tool-schedule.png" alt="Scheduling Optimizer – thumbnail">
-    </div>
-    <div class="card-body">
-      <h3>Scheduling Optimizer</h3>
-      <p>Prototype to reduce no-shows and improve chair utilization across sites.</p>
-      <span class="pill">Prototype</span>
-    </div>
-  </a>
-
-  <!-- TOOL CARD 3 -->
-  <a class="card" href="page2.html">
-    <div class="thumb">
-      <img src="assets/tool-simple.png" alt="Simple Utility – thumbnail">
-    </div>
-    <div class="card-body">
-      <h3>Simple Utility</h3>
-      <p>A tiny example page used while we build more tools.</p>
-      <span class="pill neutral">Sample</span>
-    </div>
-  </a>
-</div>
 
 ---
 
