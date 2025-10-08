@@ -1,13 +1,82 @@
 ---
 title: "Welcome"
-output: html_document
+output:
+  html_document:
+    toc: false
+    df_print: paged
+    css: style.css
 ---
 
-# Welcome 🎉
+<div class="hero">
+  <h1>Smart Oral-Health Tools</h1>
+  <p class="tagline">
+    Fast, simple, and useful web tools for clinicians, researchers, and health leaders.
+  </p>
+  <p class="subtag">Built by Abdulrahman Alshehri</p>
+  <div class="hero-cta">
+    <a class="btn" href="#tools">Explore Tools</a>
+    <a class="btn ghost" href="about.html">About</a>
+  </div>
+</div>
 
-**Hello Dear.**  
-This is a webpage to share with you some simple products that you may find them relevant to your work somehow.
+<!-- Optional hero image (replace with your own file in assets/) -->
+<!-- <img class="hero-img" src="assets/hero.jpg" alt="Oral health AI tools"> -->
 
-👉 [Go to the restorabilityApp page](restorabilityApp.html)
+## Featured
+A growing collection of small, focused apps—from risk calculators to data viewers—designed to be easy to use and easy to trust.
 
-Have fun and enjoy!
+---
+
+## Tools {#tools}
+
+<div class="grid">
+  <!-- TOOL CARD 1 -->
+  <a class="card" href="https://your-link-here.example" target="_blank" rel="noopener">
+    <div class="thumb">
+      <img src="assets/tool-risk.png" alt="Periodontal Risk – thumbnail">
+    </div>
+    <div class="card-body">
+      <h3>Periodontal Risk (Demo)</h3>
+      <p>Predict low/medium/high risk from simple questionnaire inputs. Fast triage for clinics.</p>
+      <span class="pill">Beta</span>
+    </div>
+  </a>
+
+  <!-- TOOL CARD 2 -->
+  <a class="card" href="https://your-second-tool.example" target="_blank" rel="noopener">
+    <div class="thumb">
+      <img src="assets/tool-schedule.png" alt="Scheduling Optimizer – thumbnail">
+    </div>
+    <div class="card-body">
+      <h3>Scheduling Optimizer</h3>
+      <p>Prototype to reduce no-shows and improve chair utilization across sites.</p>
+      <span class="pill">Prototype</span>
+    </div>
+  </a>
+
+  <!-- TOOL CARD 3 -->
+  <a class="card" href="page2.html">
+    <div class="thumb">
+      <img src="assets/tool-simple.png" alt="Simple Utility – thumbnail">
+    </div>
+    <div class="card-body">
+      <h3>Simple Utility</h3>
+      <p>A tiny example page used while we build more tools.</p>
+      <span class="pill neutral">Sample</span>
+    </div>
+  </a>
+</div>
+
+---
+
+## How to use
+1. Click any tool card to open it.  
+2. Read the short instructions on each tool page.  
+3. Share feedback—what worked, what didn’t, and what you need next.
+
+## Contact
+- Email: your.name@example.com  
+- GitHub: <https://github.com/your-username>  
+- LinkedIn: <https://www.linkedin.com/in/your-handle/>
+
+---
