@@ -1,0 +1,9 @@
+name: "AlShehriUSM Site"
+title: "Welcome"
+output_dir: "docs"
+output:
+  html_document:
+    theme: flatly
+    
+    
+    
