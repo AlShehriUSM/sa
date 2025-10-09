@@ -1,5 +1,5 @@
 ---
-title: "Abdulrahman Alshehri"
+title: "AlShehriUSM Webpage"
 output:
   html_document:
     toc: false
@@ -10,36 +10,30 @@ output:
 <div class="hero">
   <h1>Smart Oral-Health Tools</h1>
   <p class="tagline">
-    Fast, simple, and useful web tools for clinicians, researchers, and health leaders.
-  </p>
-  <p class="subtag">Built by Abdulrahman Alshehri</p>
+    This webpage to share digital products we thought are useful for clinicians, researchers, and health leaders.   
+    A growing collection of small, focused apps—from risk calculators to data viewers—designed to be easy to use and easy to trust.
   <div class="hero-cta">
   </div>
 </div>
 
 
-
-
-
-## Featured
-A growing collection of small, focused apps—from risk calculators to data viewers—designed to be easy to use and easy to trust.
-
 ---
 
-## Tools {#tools}
+## Products {#tools}
 
 <div class="grid">
   <!-- TOOL CARD 1 -->
-  <a class="card" href="https://your-link-here.example" target="_blank" rel="noopener">
-    <div class="thumb">
-      <img src="tooth_resto.png" alt="Tooth Restorability – thumbnail">
-    </div>
-    <div class="card-body">
-      <h3>restorabilityApp</h3>
-      <p>To check tooth restorability utilizing Avila et al. (2009) criteria</p>
-      <span class="pill">Beta</span>
-    </div>
-  </a>
+<a class="card" href="https://rcdy6v-abdulrahman-sh0.shinyapps.io/Tooth-Restorability_App/" target="_blank" rel="noopener">
+  <div class="thumb">
+    <img src="assets/tooth_resto.png" alt="Tooth restorability app thumbnail">
+  </div>
+  <div class="card-body">
+    <h3>Tooth Restorability</h3>
+    <p class="card-text">Assess restorability using the Avila et&nbsp;al. (2009) criteria—quick, clinic-friendly scoring.</p>
+    <span class="pill">Beta</span>
+  </div>
+</a>
+
 
 
 ---
@@ -50,11 +44,11 @@ A growing collection of small, focused apps—from risk calculators to data view
 3. Share feedback—what worked, what didn’t, and what you need next.
 
 ## Contact
-- Email: your.name@example.com  
-- GitHub: <https://github.com/your-username>  
+- Email: alshehriabdulrahman3@student.usm.my  
+- GitHub: <https://github.com/AlShehriUSM>  
 - LinkedIn: <https://www.linkedin.com/in/your-handle/>
 
 ---
 
 
-
+Built by Abdulrahman Alshehri
