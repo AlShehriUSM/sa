@@ -43,7 +43,7 @@ This page shares small, focused web tools for clinicians, researchers, and healt
 
 ## Products
 
-### Tooth Restorability (Beta)
+### Tooth Restorability 
 
 ![Tooth restorability app](assets/tooth_resto.png){width=220}
 
