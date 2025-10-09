@@ -11,8 +11,9 @@ output:
 This page shares small, focused web tools for clinicians, researchers, and health leaders.
 
 Products
-Tooth Restorability (Beta)
-knitr::include_graphics("docs/assets/tooth_resto.png")
+Tooth Restorability App
+![restorabilityApp](assets/tooth_resto.png){width=220}
+
 
 Assess restorability using Avila et al. (2009) criteria.
 Open the app: https://rcdy6v-abdulrahman-sh0.shinyapps.io/Tooth-Restorability_App/
