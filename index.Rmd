@@ -6,7 +6,7 @@ output:
     self_contained: true
 ---
 
-##Welcome, dear.
+Welcome, dear.
 
 This page shares small, focused web tools for clinicians, researchers, and health leaders.
 
@@ -36,5 +36,27 @@ Open the app: https://rcdy6v-abdulrahman-sh0.shinyapps.io/Tooth-Restorability_Ap
 
 
 
+
+Built by Abdulrahman Alshehri# Smart Oral-Health Tools
+
+This page shares small, focused web tools for clinicians, researchers, and health leaders.
+
+## Products
+
+### Tooth Restorability (Beta)
+
+![Tooth restorability app](assets/tooth_resto.png){width=220}
+
+Assess restorability using Avila et al. (2009) criteria — quick, clinic-friendly scoring.  
+**Open the app:** <https://rcdy6v-abdulrahman-sh0.shinyapps.io/Tooth-Restorability_App/>
+
+## How to use?
+1. Click a product link.  
+2. Follow the instructions on the tool page.  
+3. Send feedback about issues or ideas.
+
+## Contact
+- Email: alshehriabdulrahman3@student.usm.my  
+- GitHub: <https://github.com/AlShehriUSM>
 
 Built by Abdulrahman Alshehri
