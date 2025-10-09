@@ -1,36 +1,39 @@
 ---
-title: "AlShehriUSM Webpage"
+title: "Smart Oral-Health Tools"
 output:
   html_document:
     toc: false
     self_contained: true
 ---
 
-Smart Oral-Health Tools
+##Welcome, dear.
 
 This page shares small, focused web tools for clinicians, researchers, and health leaders.
 
 Products
 Tooth Restorability (Beta)
-```{r}
 knitr::include_graphics("docs/assets/tooth_resto.png")
-```
+
 Assess restorability using Avila et al. (2009) criteria.
 Open the app: https://rcdy6v-abdulrahman-sh0.shinyapps.io/Tooth-Restorability_App/
 
 
-How to use
+## How to use?
 
-Click a product link.
+1. Click a product link.
 
-Follow the instructions on the tool page.
+2. Follow the instructions on the tool page.
 
-Send feedback about issues or ideas.
+3. Send feedback about issues or ideas.
 
-Contact
 
-Email: alshehriabdulrahman3@student.usm.my
+## Contact
 
-GitHub: https://github.com/AlShehriUSM
+- Email: alshehriabdulrahman3@student.usm.my
+
+- GitHub: https://github.com/AlShehriUSM
+
+
+
 
 Built by Abdulrahman Alshehri
