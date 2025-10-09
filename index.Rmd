@@ -19,7 +19,7 @@ output:
 
 ---
 
-## Products {#tools}
+## Products
 
 <div class="grid">
   <!-- TOOL CARD 1 -->
@@ -33,7 +33,6 @@ output:
     <span class="pill">Beta</span>
   </div>
 </a>
-
 
 
 ---
