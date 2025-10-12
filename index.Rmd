@@ -6,18 +6,19 @@ output:
     self_contained: true
 ---
 
-# Smart Oral-Health Tools
+## Smart Oral-Health Tools
 
 This page shares small, focused web tools for clinicians, researchers, and health leaders.
 
-## Products
+### Products
 
-### Tooth Restorability 
-
-![Tooth restorability app](assets/tooth_resto.png){width=220}
-
+#### Tooth Restorability 
+```{r}
 Assess restorability using Avila et al. (2009) criteria — quick, clinic-friendly scoring.  
 **Open the app:** <https://rcdy6v-abdulrahman-sh0.shinyapps.io/Tooth-Restorability_App/>
+```
+
+
 
 ## How to use?
 1. Click a product link.  
