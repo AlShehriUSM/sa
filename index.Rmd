@@ -13,12 +13,8 @@ This page shares small, focused web tools for clinicians, researchers, and healt
 ### Products
 
 #### Tooth Restorability 
-```{r}
 Assess restorability using Avila et al. (2009) criteria — quick, clinic-friendly scoring.  
 **Open the app:** <https://rcdy6v-abdulrahman-sh0.shinyapps.io/Tooth-Restorability_App/>
-```
-
-
 
 ## How to use?
 1. Click a product link.  
