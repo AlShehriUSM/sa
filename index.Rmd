@@ -8,22 +8,18 @@ output:
 
 ### Smart Oral-Health Tools
 
-This page shares small, focused web tools for clinicians, researchers, and health leaders.
+This page shares light, focused web tools for clinicians, researchers, and health leaders.
 
-#### Products
+#### **Products**
 
-##### Tooth Restorability 
+##### **Tooth Restorability**
 Acsess restorability using Avila et al. (2009) criteria — quick, clinic-friendly scoring.  
 **Open the app:** <https://rcdy6v-abdulrahman-sh0.shinyapps.io/Tooth-Restorability_App/>
 
-#### Decision Tree for The Treatment of Multiple Ginigval Recession
+##### **Decision Tree for The Treatment of Multiple Ginigval Recession**
 Acsess Decision Tree for The Treatment of Multiple Gingival Recession Defects When Utilizing MCAT or MCAF - Aroca et al. (2025).  
 **Open the app:** <https://rcdy6v-abdulrahman-sh0.shinyapps.io/DT_Multiple_Gingival_Recession/>
 
-#### How to use?
-1. Click a product link.  
-2. Follow the instructions on the tool page.  
-3. Send feedback about issues or ideas.
 
 #### Contact
 - Email: alshehriabdulrahman3@student.usm.my  
