@@ -10,15 +10,22 @@ output:
 
 This page shares light, focused web tools for clinicians, researchers, and health leaders.
 
+
+
 #### **Products**
 
 ##### **Tooth Restorability**
-Acsess restorability using Avila et al. (2009) criteria — quick, clinic-friendly scoring.  
+Access restorability using Avila et al. (2009) criteria — quick, clinic-friendly scoring.  
 **Open the app:** <https://rcdy6v-abdulrahman-sh0.shinyapps.io/Tooth-Restorability_App/>
 
+
+
 ##### **Decision Tree for The Treatment of Multiple Ginigval Recession**
-Acsess Decision Tree for The Treatment of Multiple Gingival Recession Defects When Utilizing MCAT or MCAF - Aroca et al. (2025).  
+Access Decision Tree for The Treatment of Multiple Gingival Recession Defects When Utilizing MCAT or MCAF - Aroca et al. (2025).  
 **Open the app:** <https://rcdy6v-abdulrahman-sh0.shinyapps.io/DT_Multiple_Gingival_Recession/>
+
+
+
 
 
 #### Contact
