@@ -1,256 +1,829 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<meta charset="utf-8" />
-<meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+  <title>Dr. Abdulrahman Alshehri | Research, AI & Digital Health Tools</title>
+  <meta name="description" content="Research, statistics, AI, data analytics, digital health, and periodontal tool portfolio by Dr. Abdulrahman Alshehri." />
+  <meta name="author" content="Dr. Abdulrahman Alshehri" />
 
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
 
+    :root {
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --surface-2: #f1f5f9;
+      --ink: #0f172a;
+      --text: #1e293b;
+      --muted: #64748b;
+      --line: #e2e8f0;
 
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --cyan: #06b6d4;
+      --teal: #14b8a6;
+      --violet: #7c3aed;
 
-<title>Digital Health Portfolio</title>
+      --dark: #0b1220;
+      --dark-2: #111827;
 
-<script src="site_libs/header-attrs-2.30/header-attrs.js"></script>
-<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
-<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<style>h1 {font-size: 34px;}
-       h1.title {font-size: 38px;}
-       h2 {font-size: 30px;}
-       h3 {font-size: 24px;}
-       h4 {font-size: 18px;}
-       h5 {font-size: 16px;}
-       h6 {font-size: 12px;}
-       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
-       pre:not([class]) { background-color: white }</style>
-<script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+      --shadow-lg: 0 28px 80px rgba(15, 23, 42, 0.12);
+      --shadow-md: 0 18px 44px rgba(15, 23, 42, 0.09);
+      --shadow-sm: 0 10px 24px rgba(15, 23, 42, 0.06);
 
-<style type="text/css">
-  code{white-space: pre-wrap;}
-  span.smallcaps{font-variant: small-caps;}
-  span.underline{text-decoration: underline;}
-  div.column{display: inline-block; vertical-align: top; width: 50%;}
-  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-  ul.task-list{list-style: none;}
-    </style>
+      --radius-xl: 34px;
+      --radius-lg: 26px;
+      --radius-md: 18px;
+      --max: 1120px;
+    }
 
-<style type="text/css">code{white-space: pre;}</style>
-<script type="text/javascript">
-if (window.hljs) {
-  hljs.configure({languages: []});
-  hljs.initHighlightingOnLoad();
-  if (document.readyState && document.readyState === "complete") {
-    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
-  }
-}
-</script>
+    * {
+      box-sizing: border-box;
+    }
 
+    html {
+      scroll-behavior: smooth;
+    }
 
+    body {
+      margin: 0;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 10% 2%, rgba(37, 99, 235, 0.12), transparent 28rem),
+        radial-gradient(circle at 90% 0%, rgba(20, 184, 166, 0.12), transparent 26rem),
+        linear-gradient(180deg, #ffffff 0%, var(--bg) 45%, #ffffff 100%);
+      font-family: "Manrope", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
 
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
+    .container {
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+    }
 
+    .top {
+      padding: 22px 0 8px;
+    }
 
+    .nav {
+      min-height: 54px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
 
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      color: var(--ink);
+    }
 
+    .brand-mark {
+      width: 44px;
+      height: 44px;
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      color: white;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--primary), var(--teal));
+      box-shadow: 0 14px 28px rgba(37, 99, 235, 0.22);
+    }
 
-<style type = "text/css">
-.main-container {
-  max-width: 940px;
-  margin-left: auto;
-  margin-right: auto;
-}
-img {
-  max-width:100%;
-}
-.tabbed-pane {
-  padding-top: 12px;
-}
-.html-widget {
-  margin-bottom: 20px;
-}
-button.code-folding-btn:focus {
-  outline: none;
-}
-summary {
-  display: list-item;
-}
-details > summary > p:only-child {
-  display: inline;
-}
-pre code {
-  padding: 0;
-}
-</style>
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--muted);
+      font-size: 0.94rem;
+      font-weight: 700;
+    }
 
+    .nav-links a {
+      padding: 9px 13px;
+      border-radius: 999px;
+      transition: 0.18s ease;
+    }
 
+    .nav-links a:hover {
+      color: var(--primary);
+      background: rgba(37, 99, 235, 0.08);
+    }
 
-<!-- tabsets -->
+    .hero {
+      padding: 68px 0 44px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(360px, 0.95fr);
+      gap: 58px;
+      align-items: center;
+    }
 
-<style type="text/css">
-.tabset-dropdown > .nav-tabs {
-  display: inline-table;
-  max-height: 500px;
-  min-height: 44px;
-  overflow-y: auto;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      width: fit-content;
+      padding: 8px 14px;
+      border-radius: 999px;
+      color: var(--primary-dark);
+      background: rgba(37, 99, 235, 0.08);
+      border: 1px solid rgba(37, 99, 235, 0.14);
+      font-size: 0.88rem;
+      font-weight: 800;
+      margin-bottom: 22px;
+    }
 
-.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "\e259";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
+    .pulse {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--primary);
+      box-shadow: 0 0 0 6px rgba(37, 99, 235, 0.12);
+    }
 
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "\e258";
-  font-family: 'Glyphicons Halflings';
-  border: none;
-}
+    h1 {
+      margin: 0;
+      color: var(--ink);
+      font-size: clamp(3rem, 6.6vw, 6.25rem);
+      letter-spacing: -0.085em;
+      line-height: 0.94;
+      max-width: 780px;
+      font-weight: 800;
+    }
 
-.tabset-dropdown > .nav-tabs > li.active {
-  display: block;
-}
+    .gradient-word {
+      background: linear-gradient(135deg, var(--primary), var(--cyan), var(--teal));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
 
-.tabset-dropdown > .nav-tabs > li > a,
-.tabset-dropdown > .nav-tabs > li > a:focus,
-.tabset-dropdown > .nav-tabs > li > a:hover {
-  border: none;
-  display: inline-block;
-  border-radius: 4px;
-  background-color: transparent;
-}
+    .lead {
+      margin: 26px 0 0;
+      max-width: 610px;
+      color: var(--muted);
+      font-size: clamp(1.06rem, 1.8vw, 1.2rem);
+      line-height: 1.7;
+      font-weight: 500;
+    }
 
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
-  display: block;
-  float: none;
-}
+    .name {
+      display: grid;
+      gap: 4px;
+      margin-top: 26px;
+      color: var(--ink);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+    }
 
-.tabset-dropdown > .nav-tabs > li {
-  display: none;
-}
-</style>
+    .name span {
+      color: var(--muted);
+      font-size: 0.98rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
 
-<!-- code folding -->
+    .actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 34px;
+    }
 
+    .btn {
+      min-height: 49px;
+      padding: 0 18px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      border: 1px solid var(--line);
+      background: var(--surface);
+      color: var(--ink);
+      font-weight: 800;
+      transition: 0.18s ease;
+      box-shadow: 0 1px 0 rgba(255,255,255,0.75) inset;
+    }
 
+    .btn.primary {
+      color: white;
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      border-color: rgba(37, 99, 235, 0.22);
+      box-shadow: 0 16px 32px rgba(37, 99, 235, 0.24);
+    }
 
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-sm);
+    }
 
+    .visual {
+      position: relative;
+      min-height: 520px;
+    }
+
+    .orb {
+      position: absolute;
+      inset: 42px 6px auto auto;
+      width: 410px;
+      height: 410px;
+      border-radius: 48%;
+      background:
+        radial-gradient(circle at 28% 28%, rgba(255,255,255,0.60), transparent 26%),
+        linear-gradient(135deg, rgba(37, 99, 235, 0.15), rgba(6, 182, 212, 0.16), rgba(20, 184, 166, 0.18));
+      transform: rotate(-8deg);
+    }
+
+    .dashboard {
+      position: absolute;
+      inset: 0 0 auto 34px;
+      min-height: 450px;
+      border-radius: var(--radius-xl);
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid rgba(226, 232, 240, 0.92);
+      backdrop-filter: blur(18px);
+      box-shadow: var(--shadow-lg);
+      overflow: hidden;
+    }
+
+    .dashboard::before {
+      content: "";
+      position: absolute;
+      width: 360px;
+      height: 360px;
+      right: -170px;
+      bottom: -180px;
+      border-radius: 50%;
+      border: 1px solid rgba(37, 99, 235, 0.14);
+    }
+
+    .hero-panel {
+      position: relative;
+      min-height: 254px;
+      border-radius: 28px;
+      padding: 26px;
+      color: white;
+      background:
+        radial-gradient(circle at 100% 0%, rgba(20, 184, 166, 0.36), transparent 38%),
+        linear-gradient(135deg, var(--dark), #172554 58%, var(--primary));
+      overflow: hidden;
+    }
+
+    .hero-panel::after {
+      content: "";
+      position: absolute;
+      width: 280px;
+      height: 280px;
+      right: -112px;
+      top: -138px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.10);
+    }
+
+    .hero-panel small {
+      position: relative;
+      z-index: 1;
+      color: rgba(255, 255, 255, 0.68);
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+
+    .hero-panel strong {
+      position: relative;
+      z-index: 1;
+      display: block;
+      margin-top: 72px;
+      max-width: 390px;
+      font-size: 2.04rem;
+      line-height: 1.08;
+      letter-spacing: -0.06em;
+      font-weight: 800;
+    }
+
+    .stats {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 13px;
+      margin-top: 14px;
+    }
+
+    .stat {
+      background: rgba(255, 255, 255, 0.92);
+      border: 1px solid rgba(226, 232, 240, 0.90);
+      border-radius: 22px;
+      padding: 18px;
+    }
+
+    .stat b {
+      display: block;
+      color: var(--ink);
+      font-size: 1.5rem;
+      letter-spacing: -0.06em;
+      line-height: 1;
+      font-weight: 800;
+    }
+
+    .stat span {
+      display: block;
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-weight: 650;
+    }
+
+    .note-card {
+      position: absolute;
+      right: -4px;
+      bottom: 18px;
+      width: 242px;
+      border-radius: 26px;
+      padding: 18px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow-md);
+    }
+
+    .note-card b {
+      display: block;
+      color: var(--ink);
+      margin-bottom: 5px;
+      letter-spacing: -0.035em;
+      font-weight: 800;
+    }
+
+    .note-card span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.92rem;
+      font-weight: 500;
+    }
+
+    section {
+      padding: 38px 0;
+    }
+
+    .section-head {
+      margin-bottom: 20px;
+    }
+
+    .section-head h2 {
+      margin: 0;
+      color: var(--ink);
+      font-size: clamp(2rem, 3vw, 2.85rem);
+      line-height: 1;
+      letter-spacing: -0.075em;
+      font-weight: 800;
+    }
+
+    .tools {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 17px;
+    }
+
+    .tool {
+      position: relative;
+      overflow: hidden;
+      min-height: 312px;
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      box-shadow: 0 1px 0 rgba(255, 255, 255, 0.85) inset;
+      display: flex;
+      flex-direction: column;
+      transition: 0.2s ease;
+    }
+
+    .tool::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto 0;
+      height: 7px;
+      background: linear-gradient(90deg, var(--primary), var(--cyan), var(--teal));
+    }
+
+    .tool:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-md);
+      border-color: rgba(37, 99, 235, 0.24);
+    }
+
+    .tool-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 8px 0 30px;
+    }
+
+    .num {
+      width: 52px;
+      height: 52px;
+      border-radius: 19px;
+      display: grid;
+      place-items: center;
+      background: rgba(37, 99, 235, 0.08);
+      color: var(--primary);
+      font-weight: 800;
+      letter-spacing: -0.055em;
+    }
+
+    .tag {
+      color: var(--muted);
+      background: var(--surface-2);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 7px 11px;
+      font-size: 0.8rem;
+      font-weight: 800;
+    }
+
+    .tool h3 {
+      margin: 0;
+      color: var(--ink);
+      font-size: 1.38rem;
+      line-height: 1.16;
+      letter-spacing: -0.055em;
+      font-weight: 800;
+    }
+
+    .tool p {
+      margin: 13px 0 0;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .tool .btn {
+      width: 100%;
+      margin-top: auto;
+    }
+
+    .focus-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 13px;
+      align-items: stretch;
+    }
+
+    .focus {
+      min-height: 132px;
+      border-radius: 24px;
+      padding: 20px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      align-items: end;
+      color: var(--ink);
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .focus::before {
+      content: "";
+      position: absolute;
+      width: 74px;
+      height: 74px;
+      right: -24px;
+      top: -24px;
+      border-radius: 50%;
+      background: rgba(37, 99, 235, 0.08);
+    }
+
+    .focus:nth-child(2)::before { background: rgba(6, 182, 212, 0.10); }
+    .focus:nth-child(3)::before { background: rgba(20, 184, 166, 0.10); }
+    .focus:nth-child(4)::before { background: rgba(124, 58, 237, 0.09); }
+    .focus:nth-child(5)::before { background: rgba(37, 99, 235, 0.10); }
+    .focus:nth-child(6)::before { background: rgba(20, 184, 166, 0.12); }
+
+    .contact {
+      margin-top: 28px;
+      position: relative;
+      overflow: hidden;
+      border-radius: var(--radius-xl);
+      padding: 34px;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 24px;
+      align-items: center;
+      color: white;
+      background:
+        radial-gradient(circle at 84% 10%, rgba(20, 184, 166, 0.26), transparent 22rem),
+        linear-gradient(135deg, var(--dark), #172554 58%, var(--primary) 150%);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .contact h2 {
+      margin: 0;
+      font-size: clamp(2rem, 3.2vw, 3.05rem);
+      line-height: 1;
+      letter-spacing: -0.075em;
+      font-weight: 800;
+    }
+
+    .contact p {
+      margin: 12px 0 0;
+      max-width: 620px;
+      color: rgba(255, 255, 255, 0.72);
+      font-weight: 500;
+    }
+
+    .contact-actions {
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      gap: 11px;
+    }
+
+    .contact .btn {
+      color: white;
+      background: rgba(255, 255, 255, 0.12);
+      border-color: rgba(255, 255, 255, 0.18);
+      box-shadow: none;
+    }
+
+    .contact .btn:hover {
+      background: rgba(255, 255, 255, 0.18);
+    }
+
+    footer {
+      padding: 30px 0 44px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.92rem;
+      font-weight: 600;
+    }
+
+    @media (max-width: 1060px) {
+      .focus-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 980px) {
+      .hero,
+      .tools,
+      .contact {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        gap: 34px;
+      }
+
+      .visual {
+        min-height: 470px;
+      }
+
+      .dashboard {
+        inset-left: 0;
+      }
+
+      .contact-actions {
+        justify-content: flex-start;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .container {
+        width: min(var(--max), calc(100% - 24px));
+      }
+
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .nav-links {
+        width: 100%;
+        overflow-x: auto;
+        padding-bottom: 2px;
+      }
+
+      .hero {
+        padding: 44px 0 26px;
+      }
+
+      h1 {
+        font-size: clamp(3rem, 16vw, 4.2rem);
+      }
+
+      .visual {
+        min-height: 520px;
+      }
+
+      .dashboard {
+        inset: 0 0 auto 0;
+        padding: 17px;
+      }
+
+      .hero-panel strong {
+        margin-top: 56px;
+        font-size: 1.74rem;
+      }
+
+      .stats,
+      .focus-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .note-card {
+        left: 24px;
+        right: 24px;
+        width: auto;
+        bottom: 4px;
+      }
+
+      .tool {
+        min-height: 294px;
+      }
+
+      .focus {
+        min-height: 92px;
+      }
+
+      .contact {
+        padding: 28px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .btn,
+      .tool,
+      .nav-links a {
+        transition: none;
+      }
+
+      .btn:hover,
+      .tool:hover {
+        transform: none;
+      }
+    }
+  </style>
 </head>
 
 <body>
+  <header class="top">
+    <div class="container nav">
+      <a class="brand" href="#">
+        <span class="brand-mark">A</span>
+        <span>Abdulrahman Alshehri</span>
+      </a>
 
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#tools">Tools</a>
+        <a href="#focus">Focus</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<div class="container-fluid main-container">
+  <main class="container">
+    <section class="hero" aria-label="Research and digital health tools portfolio">
+      <div>
+        <div class="eyebrow"><span class="pulse"></span> Research & Digital Tools Portfolio</div>
 
+        <h1>Tools for <span class="gradient-word">research</span>, data, and healthcare innovation.</h1>
 
+        <p class="lead">
+          A practical hub supporting research-related tasks from proposal development and study design to statistics, AI-assisted analysis, and publication.
+        </p>
 
+        <p class="name">
+          Dr. Abdulrahman Alshehri
+          <span>Researcher | AI, Data Analytics &amp; Healthcare Innovation</span>
+        </p>
 
-<div id="header">
+        <div class="actions">
+          <a class="btn primary" href="#tools">View tools →</a>
+          <a class="btn" href="mailto:alshehriabdulrahman3@gmail.com">Contact</a>
+        </div>
+      </div>
 
+      <div class="visual" aria-label="Portfolio visual">
+        <div class="orb"></div>
 
+        <div class="dashboard">
+          <div class="hero-panel">
+            <small>Working portfolio</small>
+            <strong>Research support, data analytics, and digital health tools.</strong>
+          </div>
 
-<h1 class="title toc-ignore">Digital Health Portfolio</h1>
+          <div class="stats">
+            <div class="stat">
+              <b>03</b>
+              <span>active tools</span>
+            </div>
+            <div class="stat">
+              <b>06</b>
+              <span>focus areas</span>
+            </div>
+          </div>
+        </div>
 
-</div>
+        <div class="note-card">
+          <b>From idea to publication</b>
+          <span>Tools for research planning, analysis, and implementation.</span>
+        </div>
+      </div>
+    </section>
 
+    <section id="tools">
+      <div class="section-head">
+        <h2>Featured tools</h2>
+      </div>
 
-<div id="smart-oral-health-tools" class="section level3">
-<h3>Smart Health Tools</h3>
-<p>This page shares light, focused web tools for clinicians,
-researchers, and health leaders.</p><br>
-<h5><strong>Decision Tree for The Treatment of Multiple Gingival
-Recession®</strong></h5>
-<p>Access Decision Tree for The Treatment of Multiple Gingival Recession
-Defects When Utilizing MCAT or MCAF - Aroca et al. (2025).<br />
-<strong>Open the app:</strong> <a
-href="https://rcdy6v-abdulrahman-sh0.shinyapps.io/Decision_Tree_Recession_by_Aroca_etal_2025/"
-class="uri">Multiple Gingival Recession</a></p><br>
-</div>
-<div id="periodontitis-diagnosis" class="section level5">
-<h5><strong>Periodontitis Diagnosis®</strong></h5>
-<p>Periodontal Disease Diagnosis - Based on the 2018 New Periodontal
-Classification.<br />
-<strong>Open the app:</strong> <a
-href="https://rcdy6v-abdulrahman-sh0.shinyapps.io/Periodontal_Diagnosis/"
-class="uri">Periodontal Disease Diagnosis</a></p><br>
-</div>
-<div id="AI-calculator" class="section level5">
-<h5><strong>AI Sample Size Calculator (Arabic)®</strong></h5>
-<p>Smart Tool Utilize AI to Guide You In Calculating Sample Size For Your Research.<br />
-<strong>Open the app:</strong> <a
-href="https://rcdy6v-abdulrahman-sh0.shinyapps.io/AI_Sample_Size_Calculator/"
-class="uri">AI Sample Size Calculator</a></p><br>
-     
-</div>
-</div>
-<div id="contact" class="section level4">
-<h4>Contact</h4>
-<ul>
-<li>Email: <a href="mailto:alshehriabdulrahman3@student.usm.my"
-class="email">alshehriabdulrahman3@student.usm.my</a><br />
-</li>
-<li>GitHub: <a href="https://github.com/AlShehriUSM"
-class="uri">https://github.com/AlShehriUSM</a></li>
-</ul>
-<p>Built by <strong>Abdulrahman Alshehri</strong></p>
-</div>
-</div>
+      <div class="tools">
+        <article class="tool">
+          <div class="tool-top">
+            <div class="num">01</div>
+            <div class="tag">Clinical</div>
+          </div>
+          <h3>Decision Tree for Multiple Gingival Recession</h3>
+          <p>MCAT/MCAF treatment planning support.</p>
+          <a class="btn primary" href="https://rcdy6v-abdulrahman-sh0.shinyapps.io/Decision_Tree_Recession_by_Aroca_etal_2025/" target="_blank" rel="noopener">Open tool →</a>
+        </article>
 
+        <article class="tool">
+          <div class="tool-top">
+            <div class="num">02</div>
+            <div class="tag">Periodontology</div>
+          </div>
+          <h3>Periodontal Disease Diagnosis</h3>
+          <p>Support based on the 2018 periodontal classification.</p>
+          <a class="btn primary" href="https://rcdy6v-abdulrahman-sh0.shinyapps.io/Periodontal_Diagnosis/" target="_blank" rel="noopener">Open tool →</a>
+        </article>
 
+        <article class="tool">
+          <div class="tool-top">
+            <div class="num">03</div>
+            <div class="tag">Research</div>
+          </div>
+          <h3>AI Sample Size Calculator — Arabic</h3>
+          <p>Arabic AI-guided sample size planning.</p>
+          <a class="btn primary" href="https://rcdy6v-abdulrahman-sh0.shinyapps.io/AI_Sample_Size_Calculator/" target="_blank" rel="noopener">Open tool →</a>
+        </article>
+      </div>
+    </section>
 
+    <section id="focus">
+      <div class="section-head">
+        <h2>Focus</h2>
+      </div>
 
-</div>
+      <div class="focus-grid">
+        <div class="focus">Research</div>
+        <div class="focus">Statistics</div>
+        <div class="focus">Machine Learning</div>
+        <div class="focus">Tool Development</div>
+        <div class="focus">Digital Health</div>
+        <div class="focus">Periodontology</div>
+      </div>
+    </section>
 
-<script>
+    <section id="contact">
+      <div class="contact">
+        <div>
+          <h2>Let’s connect.</h2>
+          <p>For collaboration in research, statistics, AI/data analytics, tool development, digital health, and periodontal innovation.</p>
+        </div>
 
-// add bootstrap table styles to pandoc tables
-function bootstrapStylePandocTables() {
-  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
-}
-$(document).ready(function () {
-  bootstrapStylePandocTables();
-});
+        <div class="contact-actions">
+          <a class="btn" href="mailto:alshehriabdulrahman3@gmail.com">Email ↗</a>
+          <a class="btn" href="https://github.com/AlShehriUSM" target="_blank" rel="noopener">GitHub ↗</a>
+          <a class="btn" href="https://www.linkedin.com/in/dr-abdulrahman-ahmed-alshehri/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-
-</script>
-
-<!-- tabsets -->
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open');
-  });
-});
-</script>
-
-<!-- code folding -->
-
-
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
-
+  <footer>
+    © 2026 Dr. Abdulrahman Alshehri · Research & Digital Tools Portfolio
+  </footer>
 </body>
 </html>
