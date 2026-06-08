@@ -403,6 +403,88 @@
 
     .statement span { color: var(--accent); }
 
+    .support-strip {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 20px;
+    }
+
+    .support-group {
+      background: rgba(255,254,251,0.88);
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      padding: 22px;
+      min-height: 230px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .support-group::before {
+      content: "";
+      position: absolute;
+      width: 58px;
+      height: 3px;
+      left: 22px;
+      top: 22px;
+      background: var(--accent);
+    }
+
+    body.lang-ar .support-group::before {
+      left: auto;
+      right: 22px;
+    }
+
+    .support-group h3 {
+      margin: 42px 0 14px;
+      color: var(--ink);
+      font-size: 1.18rem;
+      letter-spacing: -0.035em;
+      line-height: 1.25;
+    }
+
+    body.lang-ar .support-group h3 {
+      letter-spacing: -0.01em;
+      line-height: 1.5;
+    }
+
+    .support-group ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 10px;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .support-group li {
+      position: relative;
+      padding-left: 18px;
+    }
+
+    body.lang-ar .support-group li {
+      padding-left: 0;
+      padding-right: 18px;
+      line-height: 1.75;
+    }
+
+    .support-group li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.72em;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    body.lang-ar .support-group li::before {
+      left: auto;
+      right: 0;
+    }
+
     .services {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -412,6 +494,10 @@
 
     body.lang-ar .services {
       margin-top: 22px;
+    }
+
+    body.lang-ar .support-strip {
+      margin-top: 18px;
     }
 
     .service {
@@ -487,6 +573,85 @@
       color: var(--ink);
       font-weight: 700;
       font-size: 0.95rem;
+    }
+
+    .applied-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .applied-item {
+      display: grid;
+      grid-template-columns: 0.9fr 1.25fr auto;
+      gap: 18px;
+      align-items: center;
+      background: rgba(255,254,251,0.86);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 18px;
+      transition: 0.18s ease;
+    }
+
+    .applied-item:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 16px 40px rgba(21,21,21,0.08);
+      border-color: rgba(180,83,9,0.24);
+    }
+
+    .translation-label {
+      color: var(--accent);
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      line-height: 1.25;
+    }
+
+    .applied-content h3 {
+      margin: 0;
+      color: var(--ink);
+      font-size: 1.2rem;
+      line-height: 1.25;
+      letter-spacing: -0.035em;
+    }
+
+    .applied-content p {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .output-note {
+      background: var(--accent-soft);
+      border: 1px solid rgba(180,83,9,0.18);
+      border-radius: 20px;
+      padding: 15px 18px;
+      color: var(--text);
+      font-weight: 500;
+      line-height: 1.7;
+    }
+
+    .output-note strong {
+      color: var(--accent);
+    }
+
+    body.lang-ar .applied-item {
+      grid-template-columns: 1fr;
+      gap: 10px;
+      border-radius: 20px;
+    }
+
+    body.lang-ar .translation-label {
+      line-height: 1.6;
+      letter-spacing: -0.01em;
+    }
+
+    body.lang-ar .applied-content h3 {
+      font-size: 1.15rem;
+      line-height: 1.55;
+      letter-spacing: -0.01em;
+    }
+
+    body.lang-ar .applied-content p {
+      line-height: 1.85;
     }
 
     .timeline {
@@ -666,6 +831,14 @@
     body.lang-ar [data-lang="ar"] { display: revert; }
 
     @media (max-width: 980px) {
+      .support-strip {
+        grid-template-columns: 1fr;
+      }
+
+      .support-group {
+        min-height: auto;
+      }
+
       .hero,
       .hero-main,
       .section-grid,
@@ -782,13 +955,13 @@
         <nav class="nav" aria-label="Main navigation">
           <a href="#purpose" data-lang="en">Purpose</a>
           <a href="#support" data-lang="en">Support</a>
-          <a href="#work" data-lang="en">Work</a>
-          <a href="#collaboration" data-lang="en">Collaboration</a>
+          <a href="#work" data-lang="en">Output</a>
+          <a href="#collaboration" data-lang="en">Connect</a>
 
           <a href="#purpose" data-lang="ar">الهدف</a>
           <a href="#support" data-lang="ar">مجالات الدعم</a>
-          <a href="#work" data-lang="ar">الأعمال</a>
-          <a href="#collaboration" data-lang="ar">التعاون</a>
+          <a href="#work" data-lang="ar">المخرجات</a>
+          <a href="#collaboration" data-lang="ar">تواصل</a>
         </nav>
 
         <div class="lang-toggle" aria-label="Language switcher">
@@ -812,17 +985,19 @@
               Supporting scientific research, data analytics, and healthcare innovation through practical guidance,
               analytical thinking, and digital solutions.
             </p>
+
             <p class="intro" data-lang="ar">
               مساحة لدعم البحث العلمي، وتحليل البيانات، والابتكار الصحي من خلال التفكير المنهجي،
               والتحليل الدقيق، والحلول العملية.
             </p>
 
+
             <div class="quick-links">
               <a class="btn primary" href="#support" data-lang="en">Areas of support</a>
-              <a class="btn" href="#work" data-lang="en">Selected work</a>
+              <a class="btn" href="#work" data-lang="en">From idea to output</a>
 
               <a class="btn primary" href="#support" data-lang="ar">مجالات الدعم</a>
-              <a class="btn" href="#work" data-lang="ar">أعمال مختارة</a>
+              <a class="btn" href="#work" data-lang="ar">من الفكرة إلى المخرج</a>
             </div>
           </div>
 
@@ -898,47 +1073,47 @@
             <p data-lang="ar">من تطوير الفكرة إلى مخرجات قابلة للنشر أو التطبيق.</p>
           </div>
 
-          <div class="services section-content">
-            <article class="service">
-              <h3 data-lang="en">Scientific research development</h3>
-              <h3 data-lang="ar">تطوير البحث العلمي</h3>
-              <p data-lang="en">Developing research ideas, questions, objectives, proposals, protocols, and conceptual frameworks.</p>
-              <p data-lang="ar">تطوير الأفكار البحثية، وصياغة الأسئلة، والأهداف، والمقترحات، والبروتوكولات، والأطر المفاهيمية.</p>
+          <div class="support-strip section-content">
+            <article class="support-group">
+              <h3 data-lang="en">Scientific research</h3>
+              <h3 data-lang="ar">البحث العلمي</h3>
+              <ul>
+                <li data-lang="en">Idea development and research questions</li>
+                <li data-lang="en">Proposals, protocols, and frameworks</li>
+                <li data-lang="en">Study design and methodology</li>
+
+                <li data-lang="ar">تطوير الأفكار والأسئلة البحثية</li>
+                <li data-lang="ar">المقترحات والبروتوكولات والأطر المفاهيمية</li>
+                <li data-lang="ar">تصميم الدراسات والمنهجية</li>
+              </ul>
             </article>
 
-            <article class="service">
-              <h3 data-lang="en">Study design &amp; methodology</h3>
-              <h3 data-lang="ar">تصميم الدراسات والمنهجية</h3>
-              <p data-lang="en">Supporting study design, sampling, variables, measurement approaches, and methodological logic.</p>
-              <p data-lang="ar">دعم تصميم الدراسات، واختيار العينة، وتحديد المتغيرات، وأدوات القياس، والمنطق المنهجي.</p>
+            <article class="support-group">
+              <h3 data-lang="en">Analytics and AI</h3>
+              <h3 data-lang="ar">التحليل والذكاء الاصطناعي</h3>
+              <ul>
+                <li data-lang="en">Statistics and data analytics</li>
+                <li data-lang="en">AI and machine learning applications</li>
+                <li data-lang="en">Interpretation and reporting of results</li>
+
+                <li data-lang="ar">الإحصاء وتحليل البيانات</li>
+                <li data-lang="ar">تطبيقات الذكاء الاصطناعي وتعلم الآلة</li>
+                <li data-lang="ar">تفسير النتائج وعرضها بوضوح</li>
+              </ul>
             </article>
 
-            <article class="service">
-              <h3 data-lang="en">Statistics &amp; data analytics</h3>
-              <h3 data-lang="ar">الإحصاء وتحليل البيانات</h3>
-              <p data-lang="en">Planning analyses, interpreting results, and presenting findings clearly for reports and manuscripts.</p>
-              <p data-lang="ar">تخطيط التحليلات، وتفسير النتائج، وعرض المخرجات بوضوح في التقارير والمخطوطات العلمية.</p>
-            </article>
+            <article class="support-group">
+              <h3 data-lang="en">Implementation and publication</h3>
+              <h3 data-lang="ar">التطبيق والنشر</h3>
+              <ul>
+                <li data-lang="en">Digital tool development</li>
+                <li data-lang="en">Clinical trials and health studies</li>
+                <li data-lang="en">Manuscript revision and reviewer responses</li>
 
-            <article class="service">
-              <h3 data-lang="en">AI &amp; machine learning</h3>
-              <h3 data-lang="ar">الذكاء الاصطناعي وتعلم الآلة</h3>
-              <p data-lang="en">Applying predictive, classification, and data-driven approaches to scientific and healthcare problems.</p>
-              <p data-lang="ar">توظيف النماذج التنبؤية والتصنيفية والمقاربات المعتمدة على البيانات في مشكلات علمية وصحية.</p>
-            </article>
-
-            <article class="service">
-              <h3 data-lang="en">Digital tool development</h3>
-              <h3 data-lang="ar">تطوير الأدوات الرقمية</h3>
-              <p data-lang="en">Translating research logic, clinical pathways, or analytical methods into practical digital tools.</p>
-              <p data-lang="ar">تحويل المنطق البحثي أو المسارات السريرية أو الأساليب التحليلية إلى أدوات رقمية عملية.</p>
-            </article>
-
-            <article class="service">
-              <h3 data-lang="en">Manuscript &amp; publication support</h3>
-              <h3 data-lang="ar">دعم الكتابة والنشر العلمي</h3>
-              <p data-lang="en">Supporting writing, revision, results interpretation, discussion development, and reviewer responses.</p>
-              <p data-lang="ar">دعم الكتابة، والمراجعة، وتفسير النتائج، وبناء المناقشة، والرد على ملاحظات المحكمين.</p>
+                <li data-lang="ar">تطوير الأدوات الرقمية</li>
+                <li data-lang="ar">التجارب السريرية والدراسات الصحية</li>
+                <li data-lang="ar">مراجعة المخطوطات والرد على المحكمين</li>
+              </ul>
             </article>
           </div>
         </div>
@@ -947,54 +1122,68 @@
       <section id="work" class="section">
         <div class="section-grid">
           <div class="section-title">
-            <h2 data-lang="en">Selected work</h2>
-            <h2 data-lang="ar">أعمال مختارة</h2>
-            <p data-lang="en">Examples of practical scientific and healthcare-related work.</p>
-            <p data-lang="ar">نماذج لأعمال علمية وصحية تطبيقية.</p>
+            <h2 data-lang="en">From idea to output</h2>
+            <h2 data-lang="ar">من الفكرة إلى المخرج</h2>
+            <p data-lang="en">Examples of how research questions, clinical frameworks, and methodological problems can become usable outputs.</p>
+            <p data-lang="ar">أمثلة توضّح كيف يمكن تحويل الأسئلة البحثية، والأطر السريرية، والمشكلات المنهجية إلى مخرجات قابلة للاستخدام.</p>
           </div>
 
-          <div class="timeline section-content">
-            <article class="work-item">
-              <div class="work-num">01</div>
-              <div class="work-content">
-                <h3 data-lang="en">Decision Tree for Multiple Gingival Recession</h3>
-                <h3 data-lang="ar">شجرة قرار لانحسار اللثة المتعدد</h3>
-                <p data-lang="en">A periodontal decision-support project for structured treatment planning.</p>
-                <p data-lang="ar">مشروع داعم لاتخاذ القرار في تخطيط علاج انحسار اللثة المتعدد.</p>
+          <div class="applied-list section-content">
+            <article class="applied-item">
+              <div class="translation-label" data-lang="en">Scientific Research Pathway</div>
+              <div class="translation-label" data-lang="ar">مسار البحث العلمي</div>
+
+              <div class="applied-content">
+                <h3 data-lang="en">Question → Method → Output</h3>
+                <h3 data-lang="ar">سؤال → منهجية → مخرج</h3>
+                <p data-lang="en">Example: AI Sample Size Calculator — Arabic. A methodological idea translated into accessible planning support.</p>
+                <p data-lang="ar">مثال: حاسبة حجم العينة بالذكاء الاصطناعي. تحويل فكرة منهجية إلى دعم مبسط لتخطيط الدراسة.</p>
               </div>
+
+              <a class="work-link" href="https://rcdy6v-abdulrahman-sh0.shinyapps.io/AI_Sample_Size_Calculator/" target="_blank" rel="noopener">
+                <span data-lang="en">View ↗</span>
+                <span data-lang="ar">عرض ↗</span>
+              </a>
+            </article>
+
+            <article class="applied-item">
+              <div class="translation-label" data-lang="en">Clinical Reasoning Pathway</div>
+              <div class="translation-label" data-lang="ar">مسار التفكير السريري</div>
+
+              <div class="applied-content">
+                <h3 data-lang="en">Evidence → Decision Logic</h3>
+                <h3 data-lang="ar">دليل → منطق قرار</h3>
+                <p data-lang="en">Example: Decision Tree for Multiple Gingival Recession. Clinical evidence translated into structured treatment logic.</p>
+                <p data-lang="ar">مثال: شجرة قرار لانحسار اللثة المتعدد. تحويل الدليل السريري إلى منطق علاجي منظم.</p>
+              </div>
+
               <a class="work-link" href="https://rcdy6v-abdulrahman-sh0.shinyapps.io/Decision_Tree_Recession_by_Aroca_etal_2025/" target="_blank" rel="noopener">
                 <span data-lang="en">View ↗</span>
                 <span data-lang="ar">عرض ↗</span>
               </a>
             </article>
 
-            <article class="work-item">
-              <div class="work-num">02</div>
-              <div class="work-content">
-                <h3 data-lang="en">Periodontal Disease Diagnosis</h3>
-                <h3 data-lang="ar">تشخيص أمراض دواعم الأسنان</h3>
-                <p data-lang="en">A clinical logic project based on contemporary periodontal classification.</p>
-                <p data-lang="ar">مشروع مبني على التصنيف الحديث لأمراض دواعم الأسنان.</p>
+            <article class="applied-item">
+              <div class="translation-label" data-lang="en">Assessment Framework Pathway</div>
+              <div class="translation-label" data-lang="ar">مسار أطر التقييم</div>
+
+              <div class="applied-content">
+                <h3 data-lang="en">Classification → Structured Assessment</h3>
+                <h3 data-lang="ar">تصنيف → تقييم منظم</h3>
+                <p data-lang="en">Example: Periodontal Disease Diagnosis. A clinical classification framework translated into practical assessment flow.</p>
+                <p data-lang="ar">مثال: تشخيص أمراض دواعم الأسنان. تحويل إطار تصنيف سريري إلى مسار تقييمي عملي.</p>
               </div>
+
               <a class="work-link" href="https://rcdy6v-abdulrahman-sh0.shinyapps.io/Periodontal_Diagnosis/" target="_blank" rel="noopener">
                 <span data-lang="en">View ↗</span>
                 <span data-lang="ar">عرض ↗</span>
               </a>
             </article>
 
-            <article class="work-item">
-              <div class="work-num">03</div>
-              <div class="work-content">
-                <h3 data-lang="en">AI Sample Size Calculator — Arabic</h3>
-                <h3 data-lang="ar">حاسبة حجم العينة بالذكاء الاصطناعي</h3>
-                <p data-lang="en">A research-support project designed to simplify early-stage study planning.</p>
-                <p data-lang="ar">أداة عربية لدعم الباحثين في التخطيط الأولي لحجم العينة.</p>
-              </div>
-              <a class="work-link" href="https://rcdy6v-abdulrahman-sh0.shinyapps.io/AI_Sample_Size_Calculator/" target="_blank" rel="noopener">
-                <span data-lang="en">View ↗</span>
-                <span data-lang="ar">عرض ↗</span>
-              </a>
-            </article>
+            <div class="output-note">
+              <span data-lang="en"><strong>Outputs may include:</strong> research proposals · protocols · analysis plans · dashboards · decision logic · manuscript support · digital tools</span>
+              <span data-lang="ar"><strong>قد تشمل المخرجات:</strong> مقترحات بحثية · بروتوكولات · خطط تحليل · لوحات بيانات · منطق قرار · دعم النشر · أدوات رقمية</span>
+            </div>
           </div>
         </div>
       </section>
@@ -1002,15 +1191,15 @@
       <section id="collaboration" class="section">
         <div class="contact-panel">
           <div class="contact-copy">
-            <h2 data-lang="en">Collaboration.</h2>
-            <h2 data-lang="ar">التعاون.</h2>
+            <h2 data-lang="en">Connect.</h2>
+            <h2 data-lang="ar">للتواصل.</h2>
             <p data-lang="en">
               Open to meaningful collaboration in scientific research, data analytics, artificial intelligence,
-              digital health, healthcare innovation, publication support, and clinical trials.
+              clinical trials, health studies, digital health, healthcare innovation, and publication support.
             </p>
             <p data-lang="ar">
-              نرحب بالتعاون النوعي في البحث العلمي، وتحليل البيانات، والذكاء الاصطناعي،
-              والصحة الرقمية، والابتكار الصحي، ودعم النشر، والتجارب السريرية.
+              نرحب بالتواصل والتعاون النوعي في البحث العلمي، وتحليل البيانات، والذكاء الاصطناعي،
+              والتجارب السريرية، والدراسات الصحية، والصحة الرقمية، والابتكار الصحي، ودعم النشر.
             </p>
           </div>
 
